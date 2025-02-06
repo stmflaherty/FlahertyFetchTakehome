@@ -283,7 +283,7 @@ order by count(distinct receipt_id) desc
 
 /* What are the top 5 brands by sales among users that have had their account for at least six months? */
 
--- The query below shows that CVS, Dove, TRESEMM+ë, Trident, and Coors Light have the highest sales from users with accounts that are at least 6 months
+-- The query below shows that CVS, Dove, TRESEMM+Ã«, Trident, and Coors Light have the highest sales from users with accounts that are at least 6 months
 -- old. Similarly to the previous query, the sample of data that this query reflects is severely limited by the connection to the Users_T table
 
 select top 5 brand, sum(quantity * sale) sale_sum
@@ -310,8 +310,6 @@ order by sum(quantity * sale) desc
 
 /* PART THREE: Communicate with stakeholders*/
 
-select * from UsersByMonth
-order by NewUsers desc
 /*
 
 Hi John,
